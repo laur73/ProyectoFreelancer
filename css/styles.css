@@ -1,0 +1,51 @@
+/* Custom properties */
+:root {
+    --blanco: #fff;
+    --negro: #212121;
+    --gros: #757575;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    /* Bold 700 Normal 400 */
+    font-family: 'Krub', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(7, 126, 217);
+    font-size: 3.8rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--primario);
+}
+
+.contenedor{
+    width: 120rem;
+    /* Margin agrega separaciones hacia un lado */
+    /* Empieza con top, right, bottom y left. auto lo ajusta como debe ser*/
+    margin: 100px auto;    
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
+
+.navegacion{
+    padding: 2rem;
+}
+
+.navegacion a{
+    color: var(--blanco);
+    text-decoration: none;
+}
