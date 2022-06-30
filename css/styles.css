@@ -2,7 +2,7 @@
 :root {
     --blanco: #fff;
     --negro: #212121;
-    --gros: #757575;
+    --gris: #757575;
     --primario: #ffc107;
     --secundario: #0097a7;
 }
@@ -29,23 +29,35 @@ h1 {
     color: var(--primario);
 }
 
-.contenedor{
+.contenedor {
     width: 120rem;
     /* Margin agrega separaciones hacia un lado */
     /* Empieza con top, right, bottom y left. auto lo ajusta como debe ser*/
-    margin: 100px auto;    
+    margin: 100px auto;
 }
 
-.nav-bg{
+.nav-bg {
     background-color: var(--secundario);
-    
 }
 
-.navegacion{
-    padding: 2rem;
+.navegacion {
+    /* Aquí habilitamos el flexbox */
+    /* Las propiedades para row y column son distintas */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.navegacion a{
+.navegacion a {
     color: var(--blanco);
     text-decoration: none;
+    font-size: 2rem;
+    /* Regular 400 Bold 700 */
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion a:hover {
+    color: var(--negro);
+    background-color: var(--primario);
 }
